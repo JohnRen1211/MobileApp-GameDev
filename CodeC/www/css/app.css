@@ -1,0 +1,235 @@
+:root {
+  background-image: url("../img/bgblue.png");
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* CSS for logo and "Welcome to CodeCrush" header */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.top-con {
+  display: flex;
+  justify-content: space-around; /* Adjust the justify-content property */
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-310px); 
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+#explore{
+  margin-top: 29px;
+  color: #604CE1;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+
+
+}
+#contact{
+  margin-top: 29px;
+  color: #604CE1;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+/* Learn these paragraph */
+.caption {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  color: #604CE1;
+  background-color: none;
+  padding: 10px;
+
+}
+.Plang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-180px); 
+
+}
+
+.Plang img {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 13px;
+  color: #604CE1;
+  margin-bottom: 12rem;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  transform: translateY(-220px); 
+
+}
+
+/* Flexbox for container and registration elements */
+#inputform{
+  animation: borderAnimation 2s infinite; /* Add the animation property */
+}
+.container {
+  width: 100vw;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: none; /* Remove this line to set the background color */
+}
+
+#registration {
+  position: absolute;
+  transform: translateY(210px);
+}
+#username {
+  animation: borderAnimation 2s infinite; /* Add the animation property */
+}
+/* UTILITIES */
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+/* Padded container with background */
+.start-btn {
+  /* Add specific styles for the "Start Playing" button here */
+  color: white; /* Change the text color */
+  font-weight: bold; /* Add more styles as desired */
+  background: none;
+  border: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #604CE1;
+  padding: 10px;
+  border-radius: 15px 15px 0 0; /* Updated border-radius property */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 29px;
+}
+
+.btn-wrapper:last-child {
+  margin-right: 0;
+}
+
+
+.btn-name {
+  font-size: 12px;
+  color: white;
+}
+
+
+.btn img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+.btn-wrapper .btn {
+  margin-bottom: 10px;
+}
+
+ /* Move the button 5 pixels up */
+.btn-wrapper .btn:hover {
+  transform: translateY(-5px);
+}
+
+/* Move the button 10 pixels up when clicked */
+.btn-wrapper .btn:active {
+  transform: translateY(-10px); 
+}
+
+
+
+/* FORMS */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 28rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* FOR ANIMATIONS */
+@keyframes borderAnimation {
+  0% {
+    border: 2px solid red;
+  }
+  50% {
+    border: 2px solid blue;
+  }
+  100% {
+    border: 2px solid green;
+  }
+}

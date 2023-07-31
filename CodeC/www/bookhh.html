@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookh1</title>
+    <link rel="stylesheet" href="css/review.css">
+</head>
+<body>
+    <div class="guide-page">
+        <div class="guide-container">
+            <div class="paragraph1">
+                <p class="guide-title1" style="font-weight: bold; font-size: 18px; text-align: center;">HTML Web Development<p>
+                <p style="font-weight: bold; font-size: 18px;">INTRODUCTION</p>
+                <p class="g-des">HTML, which stands for HyperText Markup Language, is a fundamental language used in web development to create the structure and content of web pages. It serves as the backbone of every website, providing a standardized way to organize and present information on the internet.</p>
+            </div>
+            <div class="paragraph2">
+                <p class="guide-title2" style="font-weight: bold; font-size: 18px;">How to use it?<p>
+                <p>To code with HTML, you start by creating an HTML document using a text editor. The document begins with a doctype declaration, which specifies the version of HTML being used. Inside the document, you use HTML tags to define different elements and their properties. Tags are enclosed in angle brackets, such as &lt;tagname&gt;, and most tags have an opening and closing tag, like &lt;tagname&gt;content&lt;/tagname&gt;.HTML tags define the structure and content of a web page. For example, the &lt;h1&gt; tag is used for headings, the &lt;p&gt; tag for paragraphs, and the &lt;a&gt; tag for links. By combining these tags and nesting them within each other, you can create a hierarchical structure for your content..</p>
+            </div>
+            <div class="paragraph2">
+                <p class="guide-title3" style="font-weight: bold; font-size: 18px;">Creating a simple page</p>
+                <p style="font-weight: bold; font-size: 18px;">Create page</p>
+                <p>HTML files can be created using any text editor. The files must be saved with a .html or .htm  extension in order to be recognized as HTML files.
+                   <br>
+                   <br>
+                   You can pres exclamation mark ! with shift and it will make you a basic aprt of html page .</p>
+            </div>
+            <div class="paragraph3">
+                <p class="guide-title4" style="font-weight: bold; font-size: 18px;">Part of HTML?</p>
+                <p class="hs-des">
+                  <p style="color: red;">&lt;!DOCTYPE&gt;</p> Defines the HTML version used in the document. In this case it is HTML5. See the doctypes topic for more information.
+                  <br>
+                  <br>
+                  &lt;html&gt;Opens the page. No markup should come after the closing tag (&lt;/html&gt;). The lang attribute declares the primary language of the page using the ISO language codes (en for English). See the Content Language topic for more information.
+                    <br>
+                    <br>
+                    <p style="color: red;">&lt;head&gt;</p>
+                    Opens the head section, which does not appear in the main browser window but mainly contains information about the HTML document, called metadata. It can also contain imports from external stylesheets and scripts. The closing tag is &lt;head&gt;.
+                    <br>
+                    <br>
+                    <p style="color: red;">&lt;meta&gt;</p>
+                    Gives the browser some metadata about the document. The charset attribute declares the character encoding. Modern HTML documents should always use UTF-8, even though it is not a requirement. In HTML, the &lt;meta&gt; tag does not require a closing tag.
+                    <br>
+                    <br>
+                    <p style="color: red;">&lt;title&gt;</p>
+                    The title of the page. Text written between this opening and the closing tag (&lt;/title&gt;) will be displayed on the tab of the page or in the title bar of the browser.
+                    <br>
+                    <br>     
+                    <p style="color: red;">&lt;body&gt;</p>        
+                    Opens the part of the document displayed to users, i.e. all the visible or audible content of a page. No content should be added after the closing tag &lt;/body&gt;.
+                    <br>
+                    <br>    
+                    <p style="color: red;">&lt;h1&gt;</p>                  
+                    A level 1 heading for the page.
+                    See headings for more information.
+                    <br>
+                    <br>     
+                    <p style="color: red;">&lt;p&gt;</p>               
+                    Represents a common paragraph of text.
+                </p>
+            </div>
+            <div class="paragraph4">
+                <p class="guide-title5" style="font-weight: bold; font-size: 18px;">Take Note</p>
+                <p class="rev-des">The HTML is used to create the parts of your website.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Taskbar -->
+    <div class="btn-container">
+        <div class="btn-wrapper">
+            <button class="btn start-btn" onclick="startGame()">
+                <img src="img/play-circle.png" alt="Start Playing" />
+            </button>
+            <span class="btn-name">Play</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="highscores.html">
+                <img src="img/score.png" alt="High Scores" />
+            </a>
+            <span class="btn-name">Scores</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="index.html">
+                <img src="img/home.png" alt="Guide" />
+            </a>
+            <span class="btn-name">HOME</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="pick1.html">
+                <img src="img/book-open-cover.png" alt="Review" />
+            </a>
+            <span class="btn-name">Review</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="guide.html">
+                <img src="img/bulb.png" alt="Guide" />
+            </a>
+            <span class="btn-name">Guide</span>
+        </div>
+    </div>
+    
+    <div class="next-button">
+      <a href="bookh2.html" class="red-button"> Next Chapter </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>

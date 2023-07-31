@@ -1,0 +1,76 @@
+body {
+  background-image: url("../img/bgblue.png");
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-left: 10%;
+  width: 130px;
+  margin-bottom: 6em; /* Add more spacing between the logo and loading screen */
+  margin-top: -2rem; /* Adjust the margin-top to move the logo higher */
+
+}
+
+.loading-container {
+  text-align: center;
+  margin-bottom: 12rem; /* Add more spacing between the loading screen and "Go as guest" button */
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(86, 165, 235, 0.2);
+  border-top: 4px solid #000000;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.guest-button-container {
+  text-align: center;
+}
+
+.guest-button {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 20px;
+  margin: 0.5rem;
+  background-color: #56a5eb;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.guest-button:hover {
+  background-color: #1c7bd9;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 28px; /* Adjust the width of the icons as needed */
+  height: 28px; /* Adjust the height of the icons as needed */
+  margin-right: 10px; /* Add some spacing between the icons */
+}

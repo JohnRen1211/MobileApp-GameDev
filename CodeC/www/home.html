@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CodeCrush</title>
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Logo and "Welcome to CodeCrush" header -->
+    <div class="top-con">
+      <img src="img/logoC.png" alt="CodeCrush Logo" class="logo" />
+      <a href="guide.html">
+        <button id="explore">EXPLORE</button>
+      </a>
+      <a href="contact.html">
+        <button id="contact">CONTACT US</button>
+      </a>
+    </div>
+    <div class="Plang">
+      <p class="caption">Learn to code these:</p>
+      <img id="python1" src="img/py.png" />
+      <img id="python1" src="img/html.png" />
+      <img id="python1" src="img/js.png" />
+      <img id="python1" src="img/c.png" />
+    </div>
+
+    <!-- Registration form -->
+    <div id="registration" class="flex-center flex-column">
+      <h1 style="font-size: 19px; font-weight: bold;"> >Welcome to CodeCrush< </h1>      <!-- Username input form -->
+      <input type="text" id="username" name="username" placeholder="Enter your username" required />
+      
+      <!-- Taskbar -->
+      <div class="btn-container">
+        <div class="btn-wrapper">
+          <button class="btn start-btn" onclick="startGame()">
+            <img src="img/play-circle.png" alt="Start Playing" />
+          </button>
+          <span class="btn-name">Play</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="highscores.html">
+            <img src="img/score.png" alt="High Scores" />
+          </a>
+          <span class="btn-name">Scores</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="index.html">
+            <img src="img/home.png" alt="Guide" />
+          </a>
+          <span class="btn-name">HOME</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="pick1.html">
+            <img src="img/book-open-cover.png" alt="Review" />
+          </a>
+          <span class="btn-name">Review</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="guide.html">
+            <img src="img/bulb.png" alt="Guide" />
+          </a>
+          <span class="btn-name">Guide</span>
+        </div>
+      </div>  
+       
+    </div>
+
+  </div>
+  <script src="js/game.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming Typing Quiz</title>
+  <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+  <style>
+    body, html {
+  height: 100%;
+}
+
+/* Center the quiz container using flexbox */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  background-image: url("../img/bgblue.png");
+}
+
+/* Style the title */
+.type-code {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 690px; /* Adjust the top value to change the vertical position of the title */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(255, 0, 0);
+}
+
+#quiz-container {
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#input-box {
+  display: block;
+  width: 89%;
+  padding: 15px;
+  font-size: 18px;
+  margin: 0 auto; /* Center the input box horizontally */
+  margin-bottom: 110px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-btn,
+#proceed-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#proceed-btn.hidden {
+  display: none;
+}
+
+#feedback {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+  </style>
+  <div class="type-code">Let's try to code</div>
+  <div id="quiz-container">
+    <div id="question"></div>
+    <input type="text" id="input-box">
+    <div class="action-buttons">
+      <button id="submit-btn">Submit</button>
+      <button id="proceed-btn" class="hidden">Proceed to Next Question</button>
+    </div>
+    <div id="feedback"></div>
+  </div>
+  <script>
+    const questions = [
+      {
+        question: 'Get the data type of a variable (x = 6) using the type function:',
+        answer: 'print(type(x))'
+      },
+      {
+        question: 'How do you print "Hello World" in python programming?',
+        answer: 'print("Hello World")'
+      },
+      {
+        question: 'Create a variable name "A" with a value of 10 remember to use space and it is case sensitive',
+        answer: 'A = 10'
+      },
+      {
+        question: 'Convert x = 1 into float use "a" as variable name',
+        answer: 'a = float(x)'
+      },
+      {
+        question: 'Use len() function to count the length this string (a = "Hello world!")',
+        answer: 'print(len(a))'
+      },
+    
+      // Add more questions as needed
+    ];
+    
+    let currentQuestionIndex = -1;
+    let isAnswerCorrect = false;
+    
+    function checkAnswer() {
+      const inputBox = document.getElementById('input-box');
+      const feedback = document.getElementById('feedback');
+    
+      if (inputBox.value.trim() === questions[currentQuestionIndex].answer) {
+        isAnswerCorrect = true;
+        feedback.textContent = 'Correct! Good job!';
+        feedback.style.color = 'green';
+      } else {
+        isAnswerCorrect = false;
+        feedback.textContent = 'Wrong answer. Try again!';
+        feedback.style.color = 'red';
+      }
+    
+      // Hide the typing area and submit button
+      inputBox.style.display = 'none';
+      document.getElementById('submit-btn').style.display = 'none';
+    
+      // Show the proceed button
+      document.getElementById('proceed-btn').style.display = 'block';
+      feedback.style.display = 'block';
+    }
+    
+    function proceedNext() {
+      // Show the typing area and submit button
+      const inputBox = document.getElementById('input-box');
+      inputBox.style.display = 'block';
+      inputBox.value = ''; // Clear the input box
+    
+      // Hide the proceed button and feedback
+      document.getElementById('proceed-btn').style.display = 'none';
+      document.getElementById('feedback').style.display = 'none';
+    
+      // Show the submit button
+      document.getElementById('submit-btn').style.display = 'block';
+    
+      // If the answer was correct, move to the next question
+      if (isAnswerCorrect) {
+        showNextQuestion();
+      }
+    }
+    
+    function showNextQuestion() {
+      currentQuestionIndex++;
+      if (currentQuestionIndex >= questions.length) {
+        // Quiz completed
+        document.getElementById('quiz-container').innerHTML = `
+          <h2>Quiz Completed!</h2>
+          <p>Congratulations! You have completed the quiz.</p>
+        `;
+        return;
+      }
+    
+      // Display the next question
+      document.getElementById('question').textContent = questions[currentQuestionIndex].question;
+      document.getElementById('input-box').style.display = 'block';
+    
+      // Reset the answer status
+      isAnswerCorrect = false;
+    }
+    
+    document.getElementById('submit-btn').addEventListener('click', checkAnswer);
+    document.getElementById('proceed-btn').addEventListener('click', proceedNext);
+    
+    // Show the first question on page load
+    showNextQuestion();
+      </script>
+</body>
+</html>

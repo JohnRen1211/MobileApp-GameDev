@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us </title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/2a80fbb697.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <div id="contact-form">
+            <div class="contact__container">
+                <div class="title">
+                    <p> Your experience is what matters... </p>
+                </div>
+                <div class="contact__deets">
+                    <p class="greeting">Contact us<hr> </p>
+                    <div class="information">
+                        <p><i class="fa-solid fa-at"></i>codecrush@gmail.com</p>
+                        <p><i class="fa-solid fa-mobile"></i> 09605304108</p>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <p class="share">Please share your thoughts with us!</p>
+                    <form class="form" name="submit-to-google-sheet">
+                        <div class="flex">
+                            <label>
+                                <input name= "firstName"class="input" type="text" placeholder="" required="">
+                                <span>first name</span>
+                            </label>
+                    
+                            <label>
+                                <input name= "lastName" class="input" type="text" placeholder="" required="">
+                                <span>last name</span>
+                            </label>
+                        </div>  
+                        <label>
+                            <input name= "email" class="input" type="email" placeholder="" required="">
+                            <span>email</span>
+                        </label> 
+                        <label>
+                            <input name= "contactNumber" class="input" placeholder="" type="tel" required="">
+                            <span>contact number</span>
+                        </label>
+                        <label>
+                            <textarea name= "message" class="input01" placeholder="" rows="3" required=""></textarea>
+                            <span>message</span>
+                        </label>
+                        
+                        <button href="#" class="fancy" type="submit">
+                          <span class="top-key"></span>
+                          <span class="text">submit</span>
+                          <span class="bottom-key-1"></span>
+                          <span class="bottom-key-2"></span>
+                        </button>
+                    </form>
+
+                </div>
+
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbw2gix6pUby9udNd-Hmb5YYyQaG8zhsZSFp2mSdMk-CCOBmgeoJG4U7eOspzr4lIWIF/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                  
+                    form.addEventListener('submit', e => {
+                      e.preventDefault()
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
+                <div class="social-media">
+                    <p class="sub"> or reach out to our Social Media</p>
+                    <div class="social-sites">
+                        <a href="https://www.facebook.com/Hulyana.Azi"> Facebook <i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/_mEyVi_05"> Twitter <i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/hulyan.mauve/"> Instagram <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/JohnRen1211/"> GitHub <i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="About">
+            <p style="font-weight: bold; font-size: 18px;">About Us</p>
+            <br>
+            <p>Code Crush is an application designed to help students test their knowledge of programming concepts and languages. At Code Crush, we are passionate about empowering aspiring programmers and unlock their full potential. Our programming application is designed to be a versatile and comprehensive tool that nurtures creativity, hones skills, and fosters a vibrant community of learners.</p>
+            <br>
+            <p style="font-weight: bold; font-size: 18px;">Origin</p>
+            <br>
+            <p>The company is a team of students of the Polytechnic University of the Philippines taking up Bachelor of Science in Computer Engineering who understands and enjoy the challenges and joy of the coding journey.</p>
+            <br>
+            <p style="font-weight: bold; font-size: 18px;">Mission</p>
+            <br>
+            <p>Our mission is to provide an inclusive, accessible, and user-friendly platform that enables individuals of all skill levels to learn and practice programming. We believe that coding is more than just writing lines of code; it's a powerful way to solve problems, build innovative solutions, and shape the digital world.</p>
+        </div>
+                      <!-- Taskbar -->
+      <div class="btn-container">
+        <div class="btn-wrapper">
+          <button class="btn start-btn" onclick="startGame()">
+            <img src="img/play-circle.png" alt="Start Playing" />
+          </button>
+          <span class="btn-name">Play</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="highscores.html">
+            <img src="img/score.png" alt="High Scores" />
+          </a>
+          <span class="btn-name">Scores</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="index.html">
+            <img src="img/home.png" alt="Guide" />
+          </a>
+          <span class="btn-name">HOME</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="pick1.html">
+            <img src="img/book-open-cover.png" alt="Review" />
+          </a>
+          <span class="btn-name">Review</span>
+        </div>
+        <div class="btn-wrapper">
+          <a class="btn" href="guide.html">
+            <img src="img/bulb.png" alt="Guide" />
+          </a>
+          <span class="btn-name">Guide</span>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </body>
+    <script src="/Project/js/script.js"></script>
+</html>

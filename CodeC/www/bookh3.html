@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookh3</title>
+    <link rel="stylesheet" href="css/review.css">
+</head>
+<body>
+    <div class="guide-page">
+        <div class="guide-container">
+            <div class="paragraph1">
+                <p class="guide-title1" style="font-weight: bold; font-size: 18px; text-align: center;">HTML Web Development<p>
+                <p style="font-weight: bold; font-size: 18px;">Link to another site</p>
+                <p class="g-des">&lt;a href="http://example.com/">Link to example.com /a&gt;.</p>
+            </div>
+            <div class="paragraph2">
+                <p class="guide-title2" style="font-weight: bold; font-size: 18px;">Classes and IDs<p>
+                <p>Classes and IDs make referencing HTML elements from scripts and stylesheets easier. The class attribute can be used on one or more tags and is used by CSS for styling. IDs however are intended to refer to a single element, meaning the same ID should never be used twice. IDs are generally used with JavaScript and internal document links, and are discouraged in CSS. This topic contains helpful explanations and examples regarding proper usage of class and ID attributes in HTML..</p>
+            </div>
+            <div class="paragraph2">
+                <p class="guide-title3" style="font-weight: bold; font-size: 18px;">Comments</p>
+                <p style="font-weight: bold; font-size: 18px;"> &lt;!-- Comment text --&gt;</p>
+                <p>Similar to other programming, markup, and markdown languages, comments in HTML provide other developers with development specific information without affecting the user interface. Unlike other languages however, HTML comments can be used to specify HTML elements for Internet Explorer only. This topic explains how to write HTML comments, and their functional applications.</p>
+                   <br>
+                   <br>
+            </div>
+            <div class="paragraph3">
+                <p class="guide-title4" style="font-weight: bold; font-size: 18px;">Browser support</p>
+                <p class="hs-des">Data attributes were introduced in HTML5 which is supported by all modern browsers, but older browsers before HTML5 don't recognize the data attributes.
+                  <br>
+                  <br>
+                  However, in HTML specifications, attributes that are not recognized by the browser must be left alone and the browser will simply ignore them when rendering the page.
+                    <br>
+                    <p>
+                      Web developers have utilized this fact to create non-standard attributes which are any attributes not part of the HTML specifications. For example, the value attribute in the line bellow is considered a non-standard attribute because the specifications for the  &lt;img&gt; tag don't have a value attribute and it is not a global attribute:
+                    </p>
+                    <br>
+                    <p>This means that although data attributes are not supported in older browsers, they still work and you can set and retrieve them using the same generic JavaScript setAttribute and getAttribute methods, but you cannot use the new dataset property which is only supported in modern browsers.</p>
+                    <br>  
+            </div>
+            <div class="paragraph4">
+                <p class="guide-title5" style="font-weight: bold; font-size: 18px;">Take Note</p>
+                <p class="rev-des">The HTML version must be supported by your browser.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Taskbar -->
+    <div class="btn-container">
+        <div class="btn-wrapper">
+            <button class="btn start-btn" onclick="startGame()">
+                <img src="img/play-circle.png" alt="Start Playing" />
+            </button>
+            <span class="btn-name">Play</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="highscores.html">
+                <img src="img/score.png" alt="High Scores" />
+            </a>
+            <span class="btn-name">Scores</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="index.html">
+                <img src="img/home.png" alt="Guide" />
+            </a>
+            <span class="btn-name">HOME</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="pick1.html">
+                <img src="img/book-open-cover.png" alt="Review" />
+            </a>
+            <span class="btn-name">Review</span>
+        </div>
+        <div class="btn-wrapper">
+            <a class="btn" href="guide.html">
+                <img src="img/bulb.png" alt="Guide" />
+            </a>
+            <span class="btn-name">Guide</span>
+        </div>
+    </div>
+    
+    <div class="next-button">
+        <a href="game.html" class="blue-button"> Play choices </a>
+    </div>
+    <br>
+    <div class="next-button">
+      <a href="tgameh.html" class="blue-button"> Play coding</a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+</html>

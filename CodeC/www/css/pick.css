@@ -1,0 +1,96 @@
+/* BUTTONS */
+/* Padded container with background */
+.start-btn {
+  /* Add specific styles for the "Start Playing" button here */
+  color: white; /* Change the text color */
+  font-weight: bold; /* Add more styles as desired */
+  background: none;
+  border: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #604CE1;
+  padding: 10px;
+  border-radius: 15px 15px 0 0; /* Updated border-radius property */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  transform: translate(20px, -139px);
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 29px;
+}
+
+.btn-wrapper:last-child {
+  margin-right: 0;
+}
+
+
+.btn-name {
+  font-size: 12px;
+  color: white;
+}
+
+
+.btn img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+.btn-wrapper .btn {
+  margin-bottom: 10px;
+}
+
+ /* Move the button 5 pixels up */
+.btn-wrapper .btn:hover {
+  transform: translateY(-5px);
+}
+
+/* Move the button 10 pixels up when clicked */
+.btn-wrapper .btn:active {
+  transform: translateY(-10px); 
+}
+/* Animation*/
+@keyframes borderAnimation {
+  0% {
+    border: 2px solid red;
+  }
+  50% {
+    border: 2px solid orange;
+  }
+  100% {
+    border: 2px solid blue;
+  }
+}
+
+body{
+  background-color: black;
+  overflow: hidden; /* Add this line to remove scrollbars */
+}
+body h1{
+  color: white;
+  transform: translateY(108px); /* Move the images 50 pixels below */
+  transform: translateX(78px); /* Move the images 50 pixels below */
+
+}
+.image-container {
+  align-items: center;
+  transform: translateY(210px); /* Move the images 50 pixels below */
+  transform: translateX(23px); /* Move the images 50 pixels below */
+  margin-left: 50px;
+}
+
+.image-container img {
+  width: 100px;
+  height: 100px;
+  animation: borderAnimation 2s infinite; /* Add the animation property */
+}
+

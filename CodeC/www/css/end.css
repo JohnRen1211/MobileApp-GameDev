@@ -1,0 +1,42 @@
+body{
+  background-image: url("../img/bgblue.png");
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#end {
+  text-align: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+#saveScoreBtn {
+  margin-left: -1px;
+
+}
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-left: -18px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  background-color: #604CE1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #4B3AA9;
+}

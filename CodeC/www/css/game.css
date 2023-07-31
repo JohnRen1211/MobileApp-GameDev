@@ -1,0 +1,99 @@
+
+.logo-container {
+  margin: 0%;
+}
+
+.container {
+  margin-top: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS for game HUD and question */
+#game {
+  text-align: center;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+  width: 80%; /* Adjust the width of the HUD as needed */
+  margin-bottom: 2rem;
+}
+
+/* Text Question and Score*/
+.hud-prefix {
+  font-size: 2rem;
+  margin: auto; /* Center the text horizontally */
+  height: 2.3rem; /* Adjust the height of the progress bar as needed */
+  margin-left: 42px;
+  margin-top: 0; /* Remove the top margin */
+  padding-top: 0; /* Remove the top padding */
+}
+
+/* Score text */
+.hud-main-text {
+  font-size: 3rem;
+  color: #dc3545;
+  transform: translateY(-0.1rem);
+  margin-left: 62px;
+
+}
+
+#progressBar {
+  width: 60%; /* Adjust the width of the progress bar as needed */
+  height: 2rem; /* Adjust the height of the progress bar as needed */
+  margin-left: 53px;
+  border: 0.3rem solid #56a5eb;
+}
+
+#progressBarFull {
+  height: 100%;
+  background-color: #56a5eb;
+  width: 0%;
+}
+
+#question {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+/* CSS for choice buttons */
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 80%; /* Adjust the width of the choice container as needed */
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(86, 165, 235, 0.25);
+  background-color: white;
+  margin: auto; /* Center the choice container horizontally */
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #56a5eb;
+  color: white;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}

@@ -1,0 +1,60 @@
+body {
+  background-image: url("../img/bgblue.png");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#go-home {
+  color: #604CE1;
+  text-decoration: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 1%;
+  margin-top: 2px;
+  display: block;
+  margin-top: 10px;
+  margin-left: 64px;
+  width: 36%;
+}
+
+
+#clearHighScoresBtn {
+  color: #604CE1;
+  border: none;
+  text-decoration: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0%;
+  margin-bottom: 10px;
+}
+
+
+#highScores {
+  text-align: center;
+}
+
+#finalScore {
+  color: #604CE1;
+}
+
+#highScoresList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+  transform: scale(1.025);
+}

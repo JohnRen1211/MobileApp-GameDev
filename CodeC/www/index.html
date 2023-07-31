@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loading</title>
+        <link rel="stylesheet" href="css/index.css">
+      </head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="img/logoC.png" alt="Your Logo" class="logo">
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-container">
+      <div class="loading-spinner"></div>
+      <h1>Loading...</h1>
+    </div>
+
+    <!-- "Go offline" Button -->
+    <div class="guest-button-container">
+      <!-- Add your button icons here -->
+      <div class="icon-container">
+        <!-- Place your icon buttons here -->
+        <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1">
+          <img src="img/google.png" alt="Icon 1">
+        </a>
+        <a href="https://www.facebook.com">
+          <img src="img/facebook.png" alt="Icon 2">
+        </a>
+        <a href="https://www.apple.com">
+          <img src="img/apple.png" alt="Icon 3">
+        </a>
+      </div>    
+      <!-- "Go as Guest" button -->
+      <button class="guest-button" onclick="goAsGuest()">Go offline</button>
+    </div>
+    <script>
+      function goAsGuest() {
+          window.location.href = "home.html"; 
+      }
+  </script>
+  </div>
+</body>
+</html>

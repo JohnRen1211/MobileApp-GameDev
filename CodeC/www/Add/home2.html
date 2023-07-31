@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home2.css">
+    <script src="https://kit.fontawesome.com/2a80fbb697.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <header>
+            <div class="tabs">
+                <div class="tabs__class">
+                    <button class="tabs__button tabs__button--active" data-for-tab="1"> <img src="logo.svg"> </button>
+                    <button class="tabs__button" data-for-tab="2"> Explore </button>
+                    <button class="tabs__button" data-for-tab="3"> About Us </button>
+                </div>
+            </div>
+        </header>
+
+        <section id="content">
+            <div id="tab-content" class="content">
+                <div class="tabs__content tabs__content--active" data-tab="1">
+                    <div class="feature">
+                        <div class="fe-box">
+                            <img src="py.svg" alt="">
+                            <p> Python </p>
+                        </div>
+                        <div class="fe-box">
+                            <img src="js.svg" alt="">
+                            <p> JavaScript </p>
+                        </div>
+                        <div class="fe-box">
+                            <img src="c.svg" alt="">
+                            <p> C# </p>
+                        </div>
+                        <div class="fe-box">
+                            <img src="html.svg" alt="">
+                            <p> HTML </p>
+                        </div>
+                    </div>
+                    <div class="recommended">
+                        <p class="r__title">Recommended Topics</p>
+                        <p class="r__subtitle">Discover and Learn</p>
+                        <div class="classes">
+                            <div class="language">
+                                <div class="python">
+                                    <p> Python </p>
+                                    <div class="books">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs__content" data-tab="2">
+                    <div class="wrapper">
+                        <div id="search__container">
+                            <input type="search" id="search-input" placeholder= "Find a topic" >
+                            <button id="search"><i class="fa-solid fa-magnifying-glass" style="color: #604ce1;"></i></button>
+                        </div>
+                        <div id="buttons">
+                            <button class="button-value" onclick="filterTopic('All')"> All </button>
+                            <button class="button-value" onclick="filterTopic('Python')"> Python </button>
+                            <button class="button-value" onclick="filterTopic('HTML')"> HTML </button>
+                            <button class="button-value" onclick="filterTopic('JavaScript')"> JavaScript </button>
+                            <button class="button-value" onclick="filterTopic('C#')"> C# </button>
+                        </div>
+                        <div id="topic__list"></div>
+                    </div>
+                </div>
+                <div class="tabs__content" data-tab="3">
+                    <div class = "about-us">
+                        <div class = "about-us-title">
+                            <p>About Us</p>
+                        </div>
+                        <div class = "about-us-1">
+                            <p>Code Crush is an application designed to help students test their knowledge of programming concepts and languages. 
+                                At Code Crush, we are passionate about empowering aspiring programmers and unlock their full potential. 
+                                Our programming application is designed to be a versatile and comprehensive tool that nurtures creativity, 
+                                hones skills, and fosters a vibrant community of learners.
+                            </p> 
+                        </div>
+                     </div>
+                     <div class = "who-we-are">
+                        <div class = "who-we-are-title">
+                            <p>Who We Are</p>
+                        </div>
+                        <div class = "who-we-are-1">
+                            <p> We are a team of students of the Polytechnic University of the Philippines 
+                                taking up Bachelor of Science in Computer Engineering who understands and enjoy the challenges 
+                                and joy of the coding journey.
+                            </p> 
+                        </div>
+                     </div>
+                     <div class = "our-mission">
+                        <div class = "our-mission-title">
+                            <p>Our Mission</p>
+                        </div>
+                        <div class = "our-mission-1">
+                            <p> Our mission is to provide an inclusive, accessible, and user-friendly platform that 
+                                enables individuals of all skill levels to learn and practice programming. 
+                                We believe that coding is more than just writing lines of code; it's a powerful way to solve problems, 
+                                build innovative solutions, and shape the digital world.
+                            </p> 
+                        </div>
+                     </div>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+
+            </div>
+            
+        </section>
+
+        <div class="navigation__position">
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="home.html">
+                            <span class="icon">
+                                <i class="fa-brands fa-codepen" style="color: #fff;;"></i>
+                            </span>
+                            <span class="text"> Home </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-book-open" style="color: #fff;"></i>
+                            </span>
+                            <span class="text"> Review </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-comments" style="color: #fff;"></i>
+                            </span>
+                            <span class="text"> Discussion </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-circle-info" style="color: #fff;"></i>
+                            </span>
+                            <span class="text"> Guide </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="contact.html">
+                            <span class="icon">
+                                <i class="fa-solid fa-envelope-circle-check" style="color: #fff;"></i>
+                            </span>
+                            <span class="text"> Contact Us </span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
